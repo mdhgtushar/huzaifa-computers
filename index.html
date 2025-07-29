@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>হুযাইফা কম্পিউটার প্রশিক্ষন কেন্দ্র</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter (for a modern, clean look) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <style>
+        /* Custom styles for the Inter font */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Simple fade-in animation (for demonstration, can be expanded) */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+
+        .animate-fade-in-up {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+
+        .animate-fade-in-left {
+            animation: fadeIn 0.8s ease-out forwards;
+            animation-delay: 0.2s;
+            /* Add delay for staggered effect */
+        }
+
+        .animate-fade-in-right {
+            animation: fadeIn 0.8s ease-out forwards;
+            animation-delay: 0.4s;
+            /* Add delay for staggered effect */
+        }
+
+        .delay-200 {
+            animation-delay: 0.2s;
+        }
+
+        .delay-400 {
+            animation-delay: 0.4s;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-stone-800">
+
+    <!-- Nav Bar -->
+    <section class="bg-[#b26f54] text-white p-4 shadow-lg">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center">
+            <h1 class="text-2xl font-bold mb-2 sm:mb-0">হুযাইফা কম্পিউটার প্রশিক্ষন কেন্দ্র</h1>
+            <nav>
+                <ul class="flex space-x-4 text-sm sm:text-base">
+                    <li><a href="#home" class="hover:text-white transition duration-300">হোম</a></li>
+                    <li><a href="#services" class="hover:text-white transition duration-300">সার্ভিস</a></li>
+                    <li><a href="#school-courses" class="hover:text-white transition duration-300">বিদ্যালয়ভিত্তিক
+                            কোর্স</a></li>
+                    <li><a href="#contact" class="hover:text-white transition duration-300">যোগাযোগ</a></li>
+                </ul>
+            </nav>
+            <p class="text-sm mt-2 sm:mt-0">মোবাইল: <a href="tel:+8801746318881" class="hover:underline">01746318881</a>
+                | <a href="tel:+8801632804520" class="hover:underline">01632804520</a></p>
+        </div>
+    </section>
+   <!-- Hero Section -->
+<section id="home"
+class="relative h-[50vh] bg-cover bg-center text-center overflow-hidden rounded-b-lg shadow-inner"
+style="background-image: url('banner.jpg');">
+
+<!-- Blurry Overlay -->
+<div class="absolute inset-0 bg-white/50 backdrop-blur-sm z-0"></div>
+
+<!-- Hero Section -->
+<section id="home"
+    class="relative h-[50vh] bg-cover bg-center text-center overflow-hidden rounded-b-lg shadow-inner"
+    style="background-image: url('banner.jpg');">
+
+    <!-- Darker blurry overlay -->
+    <div class="absolute inset-0 bg-black/40 backdrop-blur-md z-0"></div>
+
+    <!-- Content -->
+    <div
+        class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center items-center animate-fade-in text-white">
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight mb-4 drop-shadow-lg">
+            ডিজিটাল দক্ষতা অর্জন শুরু হোক এখান থেকেই!
+        </h1>
+        <p class="text-lg sm:text-xl font-light mb-6 drop-shadow">
+            আপনার ভবিষ্যৎ গড়তে বিশ্বস্ত প্রশিক্ষণ কেন্দ্র।
+        </p>
+        <a href="#services"
+            class="inline-block bg-[#cfaa7e] text-white hover:bg-[#b0966f] px-6 py-3 rounded-full text-base font-semibold transition duration-300 ease-in-out shadow-lg transform hover:scale-105">
+            আমাদের কোর্সগুলো দেখুন
+        </a>
+    </div>
+</section>
+
+</section>
+
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2
+                class="text-3xl sm:text-4xl font-extrabold text-stone-800 text-center mb-12 border-b-2 border-[#cfaa7e] pb-4">
+                আমাদের সার্ভিসসমূহ</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service Box 1: Computer Certificate Course -->
+                <div
+                    class="bg-stone-50 p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 border border-stone-100 animate-fade-in-up">
+                    <div class="flex items-center mb-4">
+                        <svg class="w-10 h-10 mr-4 text-[#cfaa7e] flex-shrink-0" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z">
+                            </path>
+                        </svg>
+                        <h3 class="text-xl font-semibold text-stone-700">কম্পিউটার সার্টিফিকেট কোর্স</h3>
+                    </div>
+                    <ul class="list-disc list-inside text-stone-600 space-y-2 text-base">
+                        <li>টাইপিং এন্ড ই-মেইলিং</li>
+                        <li>মাইক্রোসফট ওয়ার্ড</li>
+                        <li>মাইক্রোসফট এক্সেল</li>
+                        <li>মাইক্রোসফট একসেস</li>
+                        <li>পাওয়ার পয়েন্ট</li>
+                        <li>সফটওয়ার ইনস্টল</li>
+                    </ul>
+                    <!-- Improved Pricing Display -->
+                    <div class="mt-6 pt-4 border-t border-stone-200 flex justify-center">
+                        <p class="text-stone-800 font-extrabold text-3xl px-4 py-2 bg-[#cfaa7e] rounded-full shadow-md">
+                            ৳৬২০০</p>
+                    </div>
+                </div>
+
+                <!-- Service Box 2: Graphics Design -->
+                <div
+                    class="bg-stone-50 p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 border border-stone-100 animate-fade-in-up delay-200">
+                    <div class="flex items-center mb-4">
+                        <svg class="w-10 h-10 mr-4 text-[#cfaa7e] flex-shrink-0" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.82 0 1.62-.12 2.39-.34l.75.75c.18.18.44.29.71.29.27 0 .53-.11.71-.29l.75-.75c-.22-.77-.34-1.57-.34-2.39 0-4.97-4.03-9-9-9zm0 16c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7zm-1-10h2v4h-2zm0 6h2v2h-2z">
+                            </path>
+                        </svg>
+                        <h3 class="text-xl font-semibold text-stone-700">গ্রাফিক্স ডিজাইন</h3>
+                    </div>
+                    <ul class="list-disc list-inside text-stone-600 space-y-2 text-base">
+                        <li>ফটোশপ এডিটিং</li>
+                        <li>এডোবি ইলাস্ট্রেটর</li>
+                        <li>ওয়ার্কশপ ডিজাইন</li>
+                        <li>ফ্রিলান্সিং কন্সেপ্ট</li>
+                        <li>ডিজিটাল মার্কেটিং</li>
+                    </ul>
+                    <!-- Improved Pricing Display -->
+                    <div class="mt-6 pt-4 border-t border-stone-200 flex justify-center">
+                        <p class="text-stone-800 font-extrabold text-3xl px-4 py-2 bg-[#cfaa7e] rounded-full shadow-md">
+                            ৳১২২০০</p>
+                    </div>
+                </div>
+
+                <!-- Service Box 3: Computer Education & ICT -->
+                <div
+                    class="bg-stone-50 p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 border border-stone-100 animate-fade-in-up delay-400">
+                    <div class="flex items-center mb-4">
+                        <svg class="w-10 h-10 mr-4 text-[#cfaa7e] flex-shrink-0" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm-1 7V3.5L18.5 9H13z">
+                            </path>
+                        </svg>
+                        <h3 class="text-xl font-semibold text-stone-700">কম্পিউটার শিক্ষা ও আইসিটি</h3>
+                    </div>
+                    <ul class="list-disc list-inside text-stone-600 space-y-2 text-base">
+                        <li>কম্পিউটার পরিচিতি</li>
+                        <li>বাংলা ও ইংরেজী টাইপিং</li>
+                        <li>মাইক্রোসফট ওয়ার্ড</li>
+                        <li>আর্ট এন্ড ড্রয়িং</li>
+                    </ul>
+                    <!-- Improved Pricing Display -->
+                    <div class="mt-6 pt-4 border-t border-stone-200 flex justify-center">
+                        <p class="text-stone-800 font-extrabold text-3xl px-4 py-2 bg-[#cfaa7e] rounded-full shadow-md">
+                            ৳৩২০০</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Teaching Services Section (School Focused) -->
+    <section id="school-courses" class="py-20 h-[70vh] bg-[#cfaa7e] flex items-center justify-center">
+        <div class="max-w-5xl mx-auto text-center px-6 animate-fade-in">
+            <h2 class="text-4xl sm:text-5xl font-extrabold text-white drop-shadow mb-6">
+                বিদ্যালয়ভিত্তিক কোর্সসমূহ
+            </h2>
+            <p class="text-lg sm:text-xl text-white/90 mb-6 max-w-3xl mx-auto">
+                স্কুলপড়ুয়া শিক্ষার্থীদের জন্য আমাদের হাতে-কলমে শেখানোর বিশেষ উদ্যোগ। ৩য় শ্রেণি থেকে ১০ম শ্রেণি
+                পর্যন্ত শিক্ষার্থীদের জন্য ডিজিটাল স্কিল ও আইসিটি বেসিক কোর্স চালু রয়েছে।
+            </p>
+
+            <div class="bg-white rounded-xl shadow-lg p-6 sm:p-8 inline-block">
+                <h3 class="text-2xl sm:text-3xl font-bold text-[#cfaa7e] mb-2">স্পেশাল ব্যাচ</h3>
+                <p class="text-stone-700 text-lg sm:text-xl font-medium">
+                    ৬ষ্ঠ থেকে দ্বাদশ শ্রেণী — <span class="font-semibold">ইংরেজি ও আইসিটি</span> প্রশিক্ষণ (সপ্তাহে ৩
+                    দিন)
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gradient-to-br from-stone-50 to-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-stone-800 text-center mb-12">
+                আমাদের সাথে যোগাযোগ করুন
+            </h2>
+            <!-- Profile Card -->
+            <div class="bg-white rounded-lg shadow-xl p-6 text-center animate-fade-in mb-5">
+                <div class="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border-4 border-[#cfaa7e] shadow-lg">
+                    <img src="profile.jpg" alt="হারুন-অর-রশিদ"
+                        class="w-full h-full object-cover">
+                </div>
+                <h3 class="text-2xl font-bold text-stone-800 mb-1">মোঃ হারুন-অর-রশিদ</h3>
+                <p class="text-[#cfaa7e] font-semibold mb-3">পরিচালক, হুজাইফা কম্পিউটারস</p>
+                <p class="text-stone-600 text-sm mb-4">কম্পিউটার ও আইসিটি শিক্ষায় 21 বছরের অভিজ্ঞতা। ডিজিটাল স্কিল
+                    শিক্ষাদানে একজন নিবেদিত প্রশিক্ষক।</p>
+                <a href="tel:+8801746318881"
+                    class="inline-block mt-2 px-5 py-2 text-white bg-[#cfaa7e] hover:bg-[#b68b5f] rounded-full text-sm transition duration-300">
+                    কল করুন: 01746318881
+                </a>
+            </div>
+            <div class="grid md:grid-cols-2 gap-10 lg:gap-16 items-start">
+                <!-- Contact Information Card -->
+                <div class="bg-white p-8 rounded-lg shadow-xl border border-stone-100 animate-fade-in-left">
+                    <h3 class="text-2xl font-semibold text-stone-700 mb-6">যোগাযোগের বিবরণ</h3>
+                    <div class="space-y-5 text-lg text-stone-600">
+                        <p class="flex items-center">
+                            <svg class="w-6 h-6 mr-3 text-[#cfaa7e] flex-shrink-0" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z">
+                                </path>
+                            </svg>
+                            <span class="font-semibold">পরিচালক:</span> মোঃ হারুন-অর-রশিদ
+                        </p>
+                        <p class="flex items-center">
+                            <svg class="w-6 h-6 mr-3 text-[#cfaa7e] flex-shrink-0" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z">
+                                </path>
+                            </svg>
+                            <span class="font-semibold">ইমেইল:</span> <a href="mailto:harun.ibnnur@gmail.com"
+                                class="text-blue-600 hover:underline">harun.ibnnur@gmail.com</a>
+                        </p>
+                        <p class="flex items-center">
+                            <svg class="w-6 h-6 mr-3 text-[#cfaa7e] flex-shrink-0" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1v3.5c0 .35-.09.7-.24 1.02l-2.2 2.2z">
+                                </path>
+                            </svg>
+                            <span class="font-semibold">মোবাইল:</span> <a href="tel:+8801746318881"
+                                class="text-blue-600 hover:underline">01746318881</a>, <a href="tel:+8801632804520"
+                                class="text-blue-600 hover:underline">01632804520</a>
+                        </p>
+                        <p class="flex items-start">
+                            <svg class="w-6 h-6 mr-3 text-[#cfaa7e] flex-shrink-0 mt-1" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z">
+                                </path>
+                            </svg>
+                            <span class="font-semibold">ঠিকানা:</span> গোল পুকুর পাড় (ময়মনসিং সিটি কর্পোরেশনের পূর্ব
+                            দিকে)
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Social Media & Quick Links Card -->
+                <div class="bg-[#cfaa7e] p-8 rounded-lg shadow-xl text-white animate-fade-in-right">
+                    <h3 class="text-2xl font-semibold mb-6">আমাদেরকে অনলাইনে খুঁজুন</h3>
+                    <div class="space-y-5 text-lg">
+                        <p class="flex items-center">
+                            <svg class="w-7 h-7 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6S17 7.57 17 9.5V12h-2v3h2v6.95c3.5-.75 6-3.95 6-7.95z">
+                                </path>
+                            </svg>
+                            <span class="font-semibold">ফেসবুক:</span> <a href="https://facebook.com/harun.ibnnur"
+                                target="_blank" class="hover:underline">fb/harun.ibnnur</a>
+                        </p>
+                        <p class="flex items-center">
+                            <svg class="w-7 h-7 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12.04 3.51c-.13 0-.25.01-.38.01A9.5 9.5 0 003.5 13.04c0 .35.03.7.08 1.04l-.87 4.16.8.8c.24.24.58.37.93.37h.01l4.15-.87c.33.05.67.08 1.01.08 5.25 0 9.5-4.25 9.5-9.5s-4.25-9.5-9.5-9.5zM17.15 14.3c-.09.2-.38.4-.73.4-.35 0-.5-.1-.7-.2-.2-.1-.4-.2-.6-.2-.2 0-.4.1-.6.2-.2.1-.4.2-.6.2-.35 0-.64-.2-.73-.4-.2-.5-.8-1.9-.9-2.2-.1-.2-.2-.3-.1-.5.1-.2.2-.3.3-.4.1-.1.2-.2.3-.3.1-.1.2-.2.4-.3.1-.1.2-.2.3-.2.1 0 .3.05.4.1.1.1.2.2.3.4.1.2.2.4.2.6s-.1.4-.2.5-.2.2-.4.3c-.2.1-.4.1-.6 0-.2-.1-.4-.2-.6-.2-.2 0-.4.1-.6.2-.2.1-.4.2-.6.2-.2 0-.4-.1-.6-.2-.2-.1-.4-.2-.6-.2-.35 0-.64.2-.73.4-.2.5-.8 1.9-.9 2.2-.1.2-.2.3-.1.5.1.2.2.3.3.4.1.1.2.2.3.3.1.1.2.2.4.3.1.1.2.2.3.2.1 0 .3-.05.4-.1.1-.1.2-.2.3-.4.1-.2.2-.4.2-.6s-.1-.4-.2-.5-.2-.2-.4-.3c-.2-.1-.4-.1-.6 0-.2.1-.4.2-.6.2-.2 0-.4-.1-.6-.2-.2-.1-.4-.2-.6-.2-.35 0-.64.2-.73.4-.2.5-.8 1.9-.9 2.2-.1.2-.2.3-.1.5.1.2.2.3.3.4.1.1.2.2.3.3.1.1.2.2.4.3.1.1.2.2.3.2.1 0 .3-.05.4-.1.1-.1.2-.2.3-.4.1-.2.2-.4.2-.6s-.1-.4-.2-.5-.2-.2-.4-.3c-.2-.1-.4-.1-.6 0z">
+                                </path>
+                            </svg>
+                            <span class="font-semibold">ফেসবুক পেজ:</span> <a
+                                href="https://facebook.com/huzaifaComputers" target="_blank"
+                                class="hover:underline">fb/huzaifa Computers</a>
+                        </p>
+                        <p class="flex items-center">
+                            <svg class="w-7 h-7 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M21.54 6.54l-5.74-5.74C15.54.49 14.83 0 14 0H2C.9 0 0 .9 0 2v12c0 1.1.9 2 2 2h12c.81 0 1.54-.39 2-.99l5.74-5.74c.49-.49.49-1.28 0-1.77zM10 12V4l7 4-7 4z">
+                                </path>
+                            </svg>
+                            <span class="font-semibold">ইউটিউব চ্যানেল:</span> <a
+                                href="https://youtube.com/HuzaifaComputers" target="_blank"
+                                class="hover:underline">yt/Huzaifa Computers</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Google Maps Embed -->
+            <div class="mt-16 rounded-lg overflow-hidden shadow-xl border border-stone-100 animate-fade-in-up">
+                <h3 class="sr-only">Our Location on Map</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11516.483984185794!2d90.39578619999999!3d24.7505359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x37564f2084c7a26f%3A0x6d90a562f6b3d5b2!2sGol%20Pukur%20Par!5e0!3m2!1sen!2sbd!4v1716382000000!5m2!1sen!2sbd"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" title="Our Location on Google Maps"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="text-white bg-[#b26f54] text-center p-6 mt-10 rounded-t-lg shadow-inner">
+        <div class="max-w-7xl mx-auto">
+            <p class="text-sm sm:text-base">&copy; ২০২৫ হুযাইফা কম্পিউটার প্রশিক্ষন কেন্দ্র | সকল অধিকার সংরক্ষিত</p>
+            <div class="flex justify-center space-x-4 mt-4 text-sm">
+                <a href="#privacy" class="hover:text-[#cfaa7e] transition duration-300">গোপনীয়তা নীতি</a>
+                <a href="#terms" class="hover:text-[#cfaa7e] transition duration-300">ব্যবহারের শর্তাবলী</a>
+            </div>
+        </div>
+    </footer>
+    <!-- Popup Modal -->
+    <div id="admissionModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+        <div class="bg-white rounded-xl shadow-2xl max-w-3xl w-full p-6 relative animate-fade-in">
+            <!-- Close Button -->
+            <button onclick="document.getElementById('admissionModal').style.display='none'"
+                class="absolute top-2 right-2 text-stone-500 hover:text-stone-800 text-2xl font-bold">&times;</button>
+
+            <!-- Image -->
+            <img src="cover.jpg" alt="ভর্তির বিজ্ঞাপন"
+                class="w-full h-96 object-cover rounded-lg mb-4">
+
+            <!-- Text -->
+            <h2 class="text-xl sm:text-2xl font-bold text-stone-800 text-center mb-2 leading-snug">
+                ৩ মাস ও ৬ মাস মেয়াদী<br> সরকারী সার্টিফিকেট কোর্সে ভর্তি চলছে
+            </h2>
+        </div>
+    </div>
+
+</body>
+
+</html>
